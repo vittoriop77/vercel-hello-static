@@ -10,6 +10,14 @@
     {
       "src": "/api/(.*)",
       "dest": "/api/$1"
+    },
+    {
+      "src": "/",           // Per la root del tuo sito
+      "dest": "/index.html" // Mappa la root a index.html
+    },
+    {
+      "src": "/(.*)",       // Per tutti gli altri file statici (CSS, JS, immagini, ecc.)
+      "dest": "/$1"        // Li serve dalla root del progetto
     }
   ]
 }
