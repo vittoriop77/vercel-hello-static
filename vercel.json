@@ -1,13 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/*.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "**/*",
-      "use": "@vercel/static"
-    }    
-  ]
+  "functions": {
+    "api/hello.py": {
+      "runtime": "python3.9"
+    }
+  }
 }
